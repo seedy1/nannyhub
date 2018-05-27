@@ -30,24 +30,21 @@
                 <% end %>
           </ul>
 
+          
           <ul class="navbar-nav">
-            <% if current_admin %>
-                    <li class="nav-item active"><%= link_to 'Admin Logout', destroy_admin_session_path, method: :delete, class: 'nav-link' %></li>
-                <% end %>
+        	<% if current_user %>
+                <li class="nav-item active"><%= link_to 'Find A Nanny', nanny_jobs_path, class: 'nav-link' %></li>
+        	<%end%>
+
+			<% if current_admin %>
+                <li class="nav-item active"><%= link_to 'Admin Logout', destroy_admin_session_path, method: :delete, class: 'nav-link' %></li>    
+            <% end %>
           </ul>
           
         </div>
       </nav>
     </header>
 
-<!--
-    <div class="alert-success ">
-        <p class="notice"><%= notice %> </p>
-    </div>
-    <div class="alert-success">
-        <p class="alert"><%= alert %> </p>
-    </div>
--->
 
 <div class="alert notice alert-sucesss alert-dismissible fade show" role="alert">
         <p class="notice"><%= notice %> </p>

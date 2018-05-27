@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :nanny_jobs
     devise_for :users, :controllers => { registrations: 'registrations' }
 
     devise_for :admins
