@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'jobs/index'
+  get 'jobs/show'
+  get 'jobs/most_recent'
   resources :nanny_jobs
     devise_for :users, :controllers => { registrations: 'registrations' }
 
