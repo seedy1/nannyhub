@@ -35,6 +35,7 @@ gem 'devise'
 gem "cancan"
 gem 'country_select'
 gem "letter_opener"
+gem 'twilio-ruby'
 
 
 gem "bootstrap_form",
